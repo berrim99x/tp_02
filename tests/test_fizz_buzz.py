@@ -1,7 +1,10 @@
+import pytest
+
 from src.fizz_buzz import fizz_buzz
 
+@pytest.mark.parametrize('number,result_expected', [(0,'fizzbuzz'),(1,'1')
+])
+def test_number_returns_result_expected(number, result_expected):
+    actual_result = fizz_buzz(number)
+    assert actual_result == result_expected
 
-def test_0_returns_fizz_buzz():
-    assert fizz_buzz(0) == 'fizzbuzz'
-def test_1_returns_1():
-    assert fizz_buzz(1) == '1'
