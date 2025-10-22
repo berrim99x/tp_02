@@ -1,10 +1,7 @@
 def fizz_buzz(number: int) -> str:
-    if number == 1 :
-        return '1'
-    if number == 2 :
-        return '2'
+    if number == 0 :
+        return 'fizzbuzz'
     if number == 3 :
         return 'fizz'
-    if number == 4 :
-        return '4'
-    return 'fizzbuzz'
+    return str(number)
+
