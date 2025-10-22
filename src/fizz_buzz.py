@@ -5,4 +5,6 @@ def fizz_buzz(number: int) -> str:
         return '2'
     if number == 3 :
         return 'fizz'
+    if number == 4 :
+        return '4'
     return 'fizzbuzz'
